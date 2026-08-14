@@ -17,6 +17,12 @@
 ```
 ## 安装
 
+1. 安装 `pnpm`
+2. 运行
+```powershell
+npx @deepseek-ai/dsh plugin --profile web add github:XuezuoYS/dsh-IamDeepSeekV4ga
+```
+
 ## 使用注意
 
 目前，经过多轮测试，使用此插件会出现以下神必情况：

@@ -2,7 +2,7 @@
   "name": "dsh-plugin-iam-deepseek-v4ga",
   "version": "0.1.0",
   "private": true,
-  "description": "DeepSeek Harness plugin: injects English / I'm-style chain-of-thought rules at the top of the system prompt of every model request.",
+  "description": "DeepSeek Harness plugin: injects an [IMPORTANT] chain-of-thought rule block at the very top of the system prompt of every model request (English CoT starting with I'm, no 'Let me', direct verbs).",
   "keywords": [
     "deepseek-harness",
     "cordis",

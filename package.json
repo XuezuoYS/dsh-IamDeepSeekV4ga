@@ -1,5 +1,5 @@
 {
-  "name": "dsh-plugin-iam-deepseek",
+  "name": "dsh-plugin-iam-deepseek-v4ga",
   "version": "0.1.0",
   "private": true,
   "description": "DeepSeek Harness plugin: injects English / I'm-style chain-of-thought rules at the top of the system prompt of every model request.",

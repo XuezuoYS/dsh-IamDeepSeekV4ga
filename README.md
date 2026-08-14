@@ -15,6 +15,12 @@
 - The wording of the reasoning (CoT) tends to use direct and objective verbs such as "I need", "I will", and "I can".
 ## You must replace all the "Let me" with "I am" and "I will".
 ```
+## 安装
+
+```powershell
+dsh plugin --profile web add github:xuezuoys/dsh-IamDeepSeekV4ga
+```
+
 ## 使用注意
 
 目前，经过多轮测试，使用此插件会出现以下神必情况：

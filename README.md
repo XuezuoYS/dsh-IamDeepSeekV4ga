@@ -4,16 +4,10 @@
 
 ### 机制
 
-在每次模型请求（每轮对话 / 每个 agent step）的 system 字段最顶部注入一段固定的 `[IMPORTANT]` 规则块，约束模型的思维链（chain of thought）：
+在每次模型请求（每轮对话 / 每个 agent step）的 system 字段最顶部注入一段固定的规则块，约束模型的思维链（chain of thought）：
 
 ```markdown
-# [IMPORTANT]
-- Think (reasoning & CoT) should be expressed in English.
-- Your entire chain of thought (reasoning & CoT) **MUST** start with `I'm` .
-- Your entire reasoning (CoT) **MUST NOT** contain or use the phrase "Let me".
-- Prohibit duplicate requests. Proceed directly to divergence.
-- The wording of the reasoning (CoT) tends to use direct and objective verbs such as "I need", "I will", and "I can".
-## You must replace all the "Let me" with "I am" and "I will".
+You are a helpful software engineer assistant. **When you thought, use English and start with `We need` or `I'm`**.
 ```
 ## 安装
 

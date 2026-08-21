@@ -12,7 +12,7 @@ You are a helpful software engineer assistant. **When you thought, use English a
 
 ### 插件设置项
 
-- **开启提示词注入**（`enablePromptInjection`），默认**开启**。
+- **plugin-iam-deepseek-v4ga: 插件开关**（`enablePromptInjection`），默认**开启**。
 - 开启后：每轮 `system` 都会注入上述提示词。
 - 关闭后：插件完全不注册也不保留任何 prompt section，等于无行动。
 - 该设置项由插件自身提供（`@deepseek-ai/dsh-settings` 命名空间 `iam-deepseek-v4ga`），可在 **设置 → 插件 → 插件配置** 中切换；也可在插件 row 的 `config` 中写 `enablePromptInjection: true/false`。
@@ -28,7 +28,6 @@ npx @deepseek-ai/dsh plugin --profile web add github:XuezuoYS/dsh-IamDeepSeekV4g
 ### 如何卸载
 
 ```powershell
-# 从 profile 中移除该插件
 npx @deepseek-ai/dsh plugin --profile web remove github:XuezuoYS/dsh-IamDeepSeekV4ga
 ```
 

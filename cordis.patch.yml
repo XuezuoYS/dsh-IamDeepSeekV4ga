@@ -1,6 +1,9 @@
 # DeepSeek Harness 组合包（bundle）patch 层。
 # 当该包被加入 profile 的 dsh.profile.bundles 后，这一层会被应用。
 # 注意：插件行按「包名」引用，Node 模块解析会找到已安装的代码（main: lib/index.js）。
+# 插件自带的「开启提示词注入」设置默认开启，用户可在 设置 → 插件 → 插件配置 中关闭。
 - insert:
     - id: iam-deepseek-v4ga
       name: dsh-plugin-iam-deepseek-v4ga
+      config:
+        enablePromptInjection: true

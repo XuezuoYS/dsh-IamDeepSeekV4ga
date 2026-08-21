@@ -1,6 +1,6 @@
 # dsh-plugin-IamDeepseekV4ga
 
-一个基于 **玄学** 的让 deepseek 思维链模仿灰测神必模型的 [deepseek harness 预览版](https://github.com/deepseek-ai/deepseek-harness) 的娱乐插件
+一个基于 **玄学** 的让 deepseek 思维链模仿灰测神必模型的 [deepseek harness](https://github.com/deepseek-ai/deepseek-harness) 娱乐插件，已适配 **0.1.1-rc.2**。
 
 ### 机制
 
@@ -9,12 +9,27 @@
 ```markdown
 You are a helpful software engineer assistant. **When you thought, use English and start with `We need` or `I'm`**.
 ```
+
+### 插件设置项
+
+- **开启提示词注入**（`enablePromptInjection`），默认**开启**。
+- 开启后：每轮 `system` 都会注入上述提示词。
+- 关闭后：插件完全不注册也不保留任何 prompt section，等于无行动。
+- 该设置项由插件自身提供（`@deepseek-ai/dsh-settings` 命名空间 `iam-deepseek-v4ga`），可在 **设置 → 插件 → 插件配置** 中切换；也可在插件 row 的 `config` 中写 `enablePromptInjection: true/false`。
+
 ## 安装
 
 1. 安装 `pnpm`
 2. 运行
 ```powershell
 npx @deepseek-ai/dsh plugin --profile web add github:XuezuoYS/dsh-IamDeepSeekV4ga
+```
+
+### 如何卸载
+
+```powershell
+# 从 profile 中移除该插件
+npx @deepseek-ai/dsh plugin --profile web remove github:XuezuoYS/dsh-IamDeepSeekV4ga
 ```
 
 ## 使用注意

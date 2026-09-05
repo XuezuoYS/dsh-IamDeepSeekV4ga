@@ -1,0 +1,7 @@
+{
+  "name": "dsh-iam-verify",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "plugin.mjs",
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+}

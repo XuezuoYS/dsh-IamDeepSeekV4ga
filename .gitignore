@@ -14,3 +14,6 @@ Thumbs.db
 
 # dsh runtime artifacts
 *.local.yml
+
+# harness smoke-test scratch (profile boots, settings docs)
+.test/home/

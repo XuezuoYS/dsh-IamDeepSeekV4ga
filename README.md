@@ -1,6 +1,11 @@
 # dsh-plugin-IamDeepseekV4ga
 
-一个基于 **玄学** 的让 deepseek 思维链模仿灰测神必模型的 [deepseek harness](https://github.com/deepseek-ai/deepseek-harness) 娱乐插件，已适配 **0.1.1-rc.2**。
+一个基于 **玄学** 的让 deepseek 思维链模仿灰测神必模型的 [deepseek harness](https://github.com/deepseek-ai/deepseek-harness) 娱乐插件，已适配 **dsh-v0.1.3-alpha.1**。
+
+> 0.3.0 适配说明：0.1.3-alpha.1 移除了 `@deepseek-ai/dsh-settings` 的独立
+> `installSettingsSection` / `settingsNamespace` 帮助函数，插件随之改用
+> `ctx.settings` 服务（`SettingsProvider.installSection`）注册自己的设置命名空间，
+> 否则插件模块会因不存在导出而加载失败、导致启动失败。
 
 ### 机制
 

@@ -28,7 +28,7 @@ npx @deepseek-ai/dsh plugin --profile web add github:XuezuoYS/dsh-IamDeepSeekV4g
 ### 如何卸载
 
 ```powershell
-npx @deepseek-ai/dsh plugin --profile web remove github:XuezuoYS/dsh-IamDeepSeekV4ga
+npx @deepseek-ai/dsh plugin --profile web remove dsh-plugin-iam-deepseek-v4ga
 ```
 
 ## 使用注意
